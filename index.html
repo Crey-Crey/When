@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хроники Вена</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Текстура пятен поверх всего сайта -->
+    <div class="blood-overlay"></div>
+
+    <div class="book">
+        <header>
+            <h1 class="handwritten">Мир Вен / When</h1>
+            <p class="subtitle">Это второй сделанный сайт по одному из миров - Вен/When. Нажмите на любую кнопку чтобы просмотреть информацию о мире.</p>
+        </header>
+
+        <nav class="bookmarks">
+            <button onclick="updatePage(1)">Общая информация</button>
+            <button onclick="updatePage(2)">Религия</button>
+            <button onclick="updatePage(3)">Политика</button>
+            <button onclick="updatePage(4)">Факты</button>
+        </nav>
+
+        <article class="page-content">
+            <div id="content-text" class="ink-text">Начните изучение...</div>
+        </article>
+
+        <footer>
+            <button class="burn-btn" onclick="burnSession()">Закончить сессию</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
